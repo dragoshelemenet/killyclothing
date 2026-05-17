@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KILLY6 Product</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="../../index.html"><span class="brand-badge">K6</span><span>KILLY6</span></a>
+      <nav class="nav-links">
+        <a href="../../#carousel-section">Gallery</a>
+        <a href="../../#products">Products</a>
+        <a href="../../#founder">RIBZ</a>
+        <a class="btn black" id="navBuy" target="_blank" rel="noreferrer" href="https://wa.me/447496349619">Buy now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="product-page">
+    <div class="container">
+      <a class="back" href="../../#products">← Back to products</a>
+      <div class="product-layout">
+        <div>
+          <div class="gallery-main">
+            <span id="imageCounter" class="image-counter">1 / 1</span>
+            <img id="mainImage" src="" alt="">
+            <div class="gallery-nav">
+              <button onclick="nextImage(-1)" aria-label="Previous image">‹</button>
+              <button onclick="nextImage(1)" aria-label="Next image">›</button>
+            </div>
+          </div>
+          <div id="thumbs" class="thumbs"></div>
+        </div>
+        <aside class="product-info">
+          <span class="eyebrow" id="productCategory"></span>
+          <h1 id="productName"></h1>
+          <div class="meta"><span class="pill" id="productColor"></span><span class="product-price" id="productPrice"></span></div>
+          <h3>Available sizes</h3>
+          <div id="sizes" class="sizes"></div>
+          <p id="stockNote" class="stock"></p>
+          <div class="product-actions">
+            <a id="buyBtn" class="btn black" target="_blank" rel="noreferrer">Order / Buy now</a>
+            <a class="btn" href="../../#products">More products</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <script src="../../data.js"></script>
+  <script>window.KILLY_PRODUCT_SLUG = "gfe-killy-workwear-white";</script>
+  <script src="../../product.js"></script>
+  <script src="../../k6-product-gallery-fix.js" defer></script>
+</body>
+</html>

@@ -1,15 +1,13 @@
 {
+  "name": "killy6-static-site",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
+    "build": "mkdir -p dist && cp -R assets products *.html *.css *.js dist/",
     "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
     "preview": "vite preview --host 0.0.0.0"
   },
-  "dependencies": {
-    "@vitejs/plugin-react": "latest",
-    "vite": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "framer-motion": "latest"
-  },
-  "devDependencies": {}
+  "devDependencies": {
+    "vite": "latest"
+  }
 }
