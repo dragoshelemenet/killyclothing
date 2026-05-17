@@ -126,3 +126,25 @@ body > .k6-founder-social,
   }
 }
 /* K6 DIRECT FIX END */
+
+/* K6 BUTTON VISIBILITY FIX */
+.btn.black,
+.btn.black:visited,
+.btn.black:link,
+.instagram-btn,
+.instagram-btn:visited,
+.instagram-btn:link,
+a.instagram-btn,
+a.instagram-btn:visited,
+a.instagram-btn:link {
+  color: #ffffff !important;
+}
+
+.btn.black *,
+.instagram-btn * {
+  color: #ffffff !important;
+}
+
+.instagram-btn img {
+  filter: invert(1) !important;
+}
