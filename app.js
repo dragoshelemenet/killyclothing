@@ -46,3 +46,20 @@ $('#productGrid').innerHTML = products.map(productCard).join('');
 
 if (document.getElementById('heroTitleSmall')) document.getElementById('heroTitleSmall').textContent = hero.name;
 if (document.getElementById('heroViewImage')) document.getElementById('heroViewImage').href = productUrl(hero);
+
+
+// K6 CAROUSEL ARROWS START
+const carouselEl = document.getElementById('carousel');
+const carouselPrev = document.getElementById('carouselPrev');
+const carouselNext = document.getElementById('carouselNext');
+
+if (carouselEl && carouselPrev && carouselNext) {
+  const scrollGallery = (direction) => {
+    const amount = Math.max(280, Math.floor(carouselEl.clientWidth * 0.82));
+    carouselEl.scrollBy({ left: direction * amount, behavior: 'smooth' });
+  };
+
+  carouselPrev.addEventListener('click', () => scrollGallery(-1));
+  carouselNext.addEventListener('click', () => scrollGallery(1));
+}
+// K6 CAROUSEL ARROWS END

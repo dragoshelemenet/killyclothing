@@ -23,3 +23,106 @@ body{background:#fbfbfb;background-image:radial-gradient(circle at 1px 1px,rgba(
 .thumb{transition:transform .2s ease, opacity .2s ease;}
 .thumb:hover{transform:translateY(-2px);opacity:.88;}
 .buy-bar,.product-actions{position:sticky;bottom:14px;z-index:20;}
+
+
+/* K6 DIRECT FIX START */
+.carousel-wrap {
+  position: relative;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 20;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border: 2px solid #050505;
+  border-radius: 999px;
+  background: #fff;
+  color: #050505;
+  font-size: 24px;
+  font-weight: 1000;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 var(--pink);
+}
+
+.carousel-arrow.left {
+  left: 8px;
+}
+
+.carousel-arrow.right {
+  right: 8px;
+}
+
+.carousel-arrow:hover {
+  background: #050505;
+  color: #fff;
+}
+
+.slide-caption {
+  padding: 8px 10px !important;
+  font-size: 10px !important;
+  line-height: 1.1 !important;
+  border-radius: 14px !important;
+}
+
+.slide-caption span,
+.slide-caption b {
+  font-size: 10px !important;
+  line-height: 1.1 !important;
+}
+
+#products {
+  padding-bottom: 40px;
+}
+
+#carousel-section {
+  padding-top: 20px;
+}
+
+.founder-card {
+  grid-template-columns: auto 1fr auto !important;
+}
+
+.founder-card h2 a {
+  text-decoration: underline;
+  text-decoration-color: var(--pink);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+}
+
+.instagram-btn {
+  white-space: nowrap;
+}
+
+.instagram-btn img {
+  width: 17px;
+  height: 17px;
+  filter: invert(1);
+}
+
+body > .k6-founder-social,
+.k6-founder-social {
+  display: none !important;
+}
+
+@media (max-width: 720px) {
+  .carousel-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+  }
+
+  .founder-card {
+    grid-template-columns: auto 1fr !important;
+  }
+
+  .founder-card .instagram-btn {
+    grid-column: 1 / -1;
+    width: max-content;
+  }
+}
+/* K6 DIRECT FIX END */
